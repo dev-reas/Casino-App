@@ -1,0 +1,227 @@
+body {
+  background: #000c24;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+button,
+i,
+a {
+  color: #f6f1ea !important;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    justify-content: start !important;
+  }
+  .headerBar {
+    justify-content: end !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    justify-content: start !important;
+  }
+  .headerBar {
+    justify-content: end !important;
+  }
+}
+
+.font-header {
+  font-size: 12px;
+  width: max-content;
+}
+
+.dropdownStyle > li > .dropdown-item {
+  color: #333456 !important;
+}
+
+.myBorderClass {
+  background-color: #333456 !important;
+  border-color: #333456 !important;
+}
+
+.myBorderClass {
+  height: max-content !important;
+}
+
+@media (max-width: 425px) {
+  .headerButtons {
+    font-size: 8px;
+  }
+  .footer-title-text {
+    font-size: 10px;
+  }
+  .footer-text {
+    font-size: 8px;
+  }
+}
+
+.myBorderColorClass {
+  border-color: transparent !important;
+}
+
+.GameMenuTitles {
+  font-size: 20px;
+}
+
+.MoreButton {
+  font-size: 17px;
+}
+
+@media (max-width: 425px) {
+  .GameMenuTitles {
+    font-size: 12px;
+  }
+
+  .MoreButton {
+    font-size: 8px;
+  }
+
+  .my-2 > .col-sm-12 > img {
+    margin-bottom: 20px !important;
+  }
+}
+
+.footer-p-links {
+  opacity: 60%;
+}
+
+.social-media-logos > img {
+  height: 18px;
+  width: 18px;
+}
+
+@media (max-width: 425px) {
+  .social-media-logos > img {
+    height: 10px;
+    width: 10px;
+  }
+
+  .social-media-logos {
+    margin-top: 10px;
+    justify-content: center !important;
+  }
+
+  .footer-copyright-text {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-2 > .col-md-6 > img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center !important;
+  }
+}
+
+/* gameListingPage CSS */
+
+.specialGames,
+.specialGames > legend > .border-bottom {
+  border-image: linear-gradient(180deg, #b355ff 0%, #762cb2 100%) !important;
+  border-image-slice: 1 !important;
+}
+
+.specialGamesTitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  background: linear-gradient(180deg, #b355ff 0%, #762cb2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 425px) {
+  .specialGamesTitle {
+    font-size: 30px;
+    padding-left: 2px !important;
+  }
+  .specialGames > legend {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+.carousel-slide .carousel-inner {
+  transition: transform 0.6s ease !important;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-control-prev {
+  background: linear-gradient(90deg, #000c24 0%, rgba(0, 12, 36, 0));
+  border: none;
+}
+
+.carousel-control-next {
+  background: linear-gradient(90deg, rgba(0, 12, 36, 0) 0%, #000c24);
+  border: none;
+}
+
+/* Game View */
+
+.modal-dialog {
+  max-width: 100%;
+}
+
+.modal-content {
+  background-color: transparent;
+}
+
+.modalCloseBtn {
+  padding: 10px 20px;
+}
+
+@media (max-width: 425px) {
+  #modalCloseBtn {
+    font-size: 12px;
+  }
+
+  #modalCloseBtn > img {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.spinnerModalBody {
+  background-color: rgba(0, 0, 0, 0.5);
+}
