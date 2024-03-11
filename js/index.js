@@ -1,3 +1,4 @@
+// carousel view
 document.addEventListener("DOMContentLoaded", function () {
   let items = document.querySelectorAll(".carousel .carousel-item");
   const minPerSlide = 5;
@@ -59,3 +60,18 @@ document.addEventListener("DOMContentLoaded", function () {
     modalInstance.hide();
   }
 });
+
+// clock
+
+function updateClock() {
+  var now = new Date();
+  var hours = now.getHours().toString().padStart(2, "0");
+  var minutes = now.getMinutes().toString().padStart(2, "0");
+  var seconds = now.getSeconds().toString().padStart(2, "0");
+  var timeString = hours + ":" + minutes + ":" + seconds;
+  document.getElementById("clock").textContent = timeString;
+}
+
+setInterval(updateClock, 1000);
+
+updateClock();
